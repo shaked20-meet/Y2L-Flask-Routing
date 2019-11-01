@@ -6,7 +6,12 @@ app.secret_key = "MY_SUPER_SECRET_KEY"
 
 
 ##### Code here ######
-
+@app.route('/')
+def home():
+	return flask.render_template("home.html")
+@app.route('/store')
+def store():
+	return flask.render_template("store.html")
 
 
 #####################

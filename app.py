@@ -13,7 +13,9 @@ def home():
 def store():
 	return flask.render_template("store.html")
 
-
+@app.route('/cart')
+def cart():
+	return flask.render_template("cart.html")
 #####################
 
 

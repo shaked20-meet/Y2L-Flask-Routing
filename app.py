@@ -12,7 +12,9 @@ def home():
 @app.route('/store')
 def store():
 	return flask.render_template("store.html")
-
+@app.route('/about'):
+def about():
+	return flask.render_template("about.html")
 @app.route('/cart')
 def cart():
 	return flask.render_template("cart.html")

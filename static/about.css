@@ -1,5 +1,5 @@
 body{
-  background-color: #ffccff;
+  background-color: #fff9e6;
 }
 
 h1{
@@ -9,10 +9,10 @@ h1{
   text-align: center;
 }
 .flip-card {
-  background-color:#ffccff;
+  background-color:#fff9e6;
   width: 500px;
   height: 400px;
-  border: 1px solid #ffccff;
+  border: 1px solid #fff9e6;
   perspective: 1000px;
   position: absolute;
   top: 250px;

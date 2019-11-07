@@ -2,66 +2,71 @@
 <html>
 <head>
 	<title>Macarons Store!</title>
-	<link rel="stylesheet" type="text/css" href="../Static/store.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='store.css') }}">
 </head>
 <body>
 	<h1 id= "title">Welcome to the store!</h1>
-	<div class="card" id="pink">
-	  <img src="pink.jpg"  alt="Pink Macaron" height="150" style="width:100%">
-	  <h1>Pink Macaron</h1>
-	  <p class="price">$5</p>
-	  <form action="cart.html">
-	 	 <p><button type="submit">Add to Cart</button></p>
-	  </form>
-	</div>
-	
+	<ul>
+		<li><a href= "{{ url_for('home') }}">Home</a></li>
+		<li><a href= "{{ url_for('about') }}">About</a></li>
+		<li><a href="{{ url_for('store') }}">Macarons Store</a></li>
+	</ul>
+   <template> 
+		<div class="card" id="pink">
+		  <img src="/static/pink.jpg"  alt="Pink Macaron" height="150" style="width:100%">
+		  <h1>Pink Macaron</h1>
+		  <p class="price">$5</p>
+		  <form action="/cart">
+		 	 <p><button type="submit">Add to Cart</button></p>
+		  </form>
+		</div>
+   </template>	
 	<div class="card" id="red">
-	  <img src="red.jpg"  alt="Red Macaron" height="150" style="width:80%">
+	  <img src="/static/red.jpg"  alt="Red Macaron" height="150" style="width:80%">
 	  <h1>Red Macaron</h1>
 	  <p class="price">$5</p>
-	  <form action="cart.html">
+	  <form action="/cart">
 	 	 <p><button type="submit">Add to Cart</button></p>
 	  </form>
 	</div>
 
 
 	<div class="card" id="green">
-	  <img src="green.jpg"  alt="Green Macaron" height="150" style="width:80%">
+	  <img src="/static/green.jpg"  alt="Green Macaron" height="150" style="width:80%">
 	  <h1>Green Macaron</h1>
 	  <p class="price">$5</p>
-	  <form action="cart.html">
+	  <form action="/cart">
 	 	 <p><button type="submit">Add to Cart</button></p>
 	  </form>
 	</div>
 
 	<div class="card" id="blue">
-	  <img src="blue.webp"  alt="Blue Macaron" height="150" style="width:80%">
+	  <img src="/static/blue.webp"  alt="Blue Macaron" height="150" style="width:80%">
 	  <h1>Blue Macaron</h1>
 	  <p class="price">$5</p>
-	  <form action="cart.html">
+	  <form action="/cart">
 	 	 <p><button type="submit">Add to Cart</button></p>
 	  </form>
 	</div>
 
 	<div class="card" id="yellow">
-	  <img src="yellow.webp"  alt="Yellow Macaron" height="150" style="width:80%">
+	  <img src="/static/yellow.webp"  alt="Yellow Macaron" height="150" style="width:80%">
 	  <h1>Yellow Macaron</h1>
 	  <p class="price">$5</p>
-	  <form action="cart.html">
+	  <form action="/cart">
 	 	 <p><button type="submit">Add to Cart</button></p>
 	  </form>
 	</div>
 
 	<div class="card" id="pack">
-	  <img src="pack.jpg"  alt="Pack of Macarons" height="150" style="width:80%">
+	  <img src="/static/pack.jpg"  alt="Pack of Macarons" height="150" style="width:80%">
 	  <h1>Pack of Macarons</h1>
 	  <p class="price">$20</p>
-	  <form action="cart.html">
+	  <form action="/cart">
 	 	 <p><button type="submit">Add to Cart</button></p>
 	  </form>
 	</div>
-
-	<a href="home.html">Back To Home Page</a>
+ 
 
 </body>
 </html>
